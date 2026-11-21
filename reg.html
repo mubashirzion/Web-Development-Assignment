@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Register</h2>
+
+
+    <form action="#" method="post">
+
+
+      <label for="fullname">Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+
+      <label for="reg-email">Email:</label>
+      <input type="email" id="reg-email" name="email" placeholder="Enter your email" required>
+
+
+      <label for="reg-password">Password:</label>
+      <input type="password" id="reg-password" name="password" placeholder="Create a password" required>
+
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. 01700000000" required>
+
+
+      <p class="group-label">Gender:</p>
+      <div class="option-group">
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+      </div>
+
+
+      <p class="group-label">Interests:</p>
+      <div class="option-group">
+        <input type="checkbox" id="webdev" name="interests" value="web_development">
+        <label for="webdev">Web Development</label><br>
+
+        <input type="checkbox" id="ai" name="interests" value="artificial_intelligence">
+        <label for="ai">Artificial Intelligence</label><br>
+
+        <input type="checkbox" id="networking" name="interests" value="networking">
+        <label for="networking">Computer Networking</label>
+      </div>
+
+
+      <label for="department">Department:</label>
+      <select id="department" name="department" required>
+        <option value="">-- Select Department --</option>
+        <option value="cse">Computer Science & Engineering</option>
+        <option value="eee">Electrical & Electronic Engineering</option>
+        <option value="bba">Business Administration</option>
+      </select>
+
+
+      <label for="bio">About You:</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Write a little about yourself..."></textarea>
+
+
+      <div class="terms">
+        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+        <label for="terms">I agree to the Terms and Conditions</label>
+      </div>
+
+
+      <div class="button-group">
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+      </div>
+
+    </form>
+
+
+    <p class="form-link">Already have an account? <a href="login.html">Login here</a></p>
+  </div>
+
+</body>
+
+</html>
